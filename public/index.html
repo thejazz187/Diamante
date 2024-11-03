@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Blockchain</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organ Donation Platform</h1>
+        <p>Register as an organ donor and help save lives!</p>
+
+        <form id="donorForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="organ">Organ to Donate:</label>
+                <select id="organ" required>
+                    <option value="">Select Organ</option>
+                    <option value="kidney">Kidney</option>
+                    <option value="heart">Heart</option>
+                    <option value="liver">Liver</option>
+                    <option value="lung">Lung</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Register as Donor</button>
+            </div>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
